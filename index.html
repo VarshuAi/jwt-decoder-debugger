@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWT Decoder & Debugger — Glassmorphism Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glass-bg"></div>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo-row">
+                <span class="logo-emoji">🔑</span>
+                <div class="title-col">
+                    <h1>JWT Decoder & Debugger</h1>
+                    <p class="tagline">Locally parses JSON Web Tokens (JWT) displaying headers, payloads, and validation states.</p>
+                </div>
+            </div>
+            <div class="badge">utilities</div>
+        </header>
+
+        <main class="workspace-card">
+            
+            <div class="input-group">
+                <label>Paste JWT Token</label>
+                <textarea id="jwt-token" placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."></textarea>
+            </div>
+            <div class="jwt-panes" style="margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div>
+                    <div class="pane-header" style="color: #ff3366;">Header (Algorithm & Type)</div>
+                    <pre id="jwt-header" class="jwt-box"></pre>
+                </div>
+                <div>
+                    <div class="pane-header" style="color: #00F5FF;">Payload (Data Claims)</div>
+                    <pre id="jwt-payload" class="jwt-box"></pre>
+                </div>
+            </div>
+        
+        </main>
+        
+        <footer class="app-footer">
+            <p>Created as a premium portfolio piece by <a href="https://github.com/VARSHAN69" target="_blank">@VARSHAN69</a></p>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
