@@ -38,7 +38,7 @@ version: 1.0
 type: Repository
 author: VarshuAi
 description: >
-  Locally parses JSON Web Tokens (JWT) displaying headers, payloads, and validation states.
+  name: jwt-decoder-debugger version: 1.0 type: Repository author: VarshuAi description: >   Locally parses JSON Web Tokens (JWT) displaying headers, payloads, and validation states. primary_tech: CSS
 primary_tech: CSS
 ```
 
